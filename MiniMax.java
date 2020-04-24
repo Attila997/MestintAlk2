@@ -12,7 +12,7 @@ public class MiniMax {
         }
 
         MiniMax.maxPly = maxPly;
-        miniMax(player, board, 0);
+        miniMax(player, board, maxPly);
     }
 
     private static int miniMax (Board.State player, Board board, int currentPly) {
@@ -74,7 +74,7 @@ public class MiniMax {
 
     private static int score (Board.State player, Board board) {
         if (player == Board.State.blank) {
-            throw new IllegalArgumentException("Player must be X or O.");
+            throw new IllegalArgumentException("Player must be Blue or Red.");
         }
 
         Board.State opponent = (player == Board.State.blue) ? Board.State.red : Board.State.blue;
