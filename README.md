@@ -1,1 +1,1 @@
-# Mesterséges Inteligencia Alkalmazások 2. beadandó
+# Mesterséges Intelligencia Alkalmazások 2. beadandó
